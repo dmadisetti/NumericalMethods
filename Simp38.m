@@ -16,7 +16,7 @@ function [out] = Simp38(x, y)
     modulo = mod(length - 1, 3);
     
     for i = 1:3:length - modulo - 1
-        out = out + (h*3/8) * (y(i) + 3 * y(i+1) + y(i+2) + y(i+3));
+        out = out + (h*3/8) * (y(i) + 3 * y(i+1) + 3 * y(i+2) + y(i+3));
     end
     
     if modulo ~= 0
